@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/gwuhaolin/livego/configure"
-	"github.com/gwuhaolin/livego/protocol/api"
-	"github.com/gwuhaolin/livego/protocol/hls"
-	"github.com/gwuhaolin/livego/protocol/httpflv"
-	"github.com/gwuhaolin/livego/protocol/rtmp"
+	"github.com/Glamorgann/livego/configure"
+	"github.com/Glamorgann/livego/protocol/api"
+	"github.com/Glamorgann/livego/protocol/hls"
+	"github.com/Glamorgann/livego/protocol/httpflv"
+	"github.com/Glamorgann/livego/protocol/rtmp"
 	"net"
 	"path"
 	"runtime"
@@ -63,7 +63,7 @@ func startRtmp(stream *rtmp.RtmpStream, hlsServer *hls.Server) {
 		}
 	}()
 	log.Info("RTMP Listen On ", rtmpAddr)
-	rtmpServer.Serve(rtmpListen)
+	log.Fatal(rtmpServer.Serve(rtmpListen))
 }
 
 func startHTTPFlv(stream *rtmp.RtmpStream) {
@@ -82,7 +82,7 @@ func startHTTPFlv(stream *rtmp.RtmpStream) {
 			}
 		}()
 		log.Info("HTTP-FLV listen On ", httpflvAddr)
-		hdlServer.Serve(flvListen)
+		log.Fatal(hdlServer.Serve(flvListen))
 	}()
 }
 
@@ -102,7 +102,7 @@ func startAPI(stream *rtmp.RtmpStream) {
 				}
 			}()
 			log.Info("HTTP-API listen On ", apiAddr)
-			opServer.Serve(opListen)
+			log.Fatal(opServer.Serve(opListen))
 		}()
 	}
 }
