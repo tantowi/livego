@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gwuhaolin/livego/configure"
+	"github.com/Glamorgann/livego/configure"
 
-	"github.com/gwuhaolin/livego/av"
+	"github.com/Glamorgann/livego/av"
 
 	log "github.com/sirupsen/logrus"
 )

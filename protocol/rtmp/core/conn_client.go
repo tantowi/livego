@@ -9,8 +9,8 @@ import (
 	neturl "net/url"
 	"strings"
 
-	"github.com/gwuhaolin/livego/av"
-	"github.com/gwuhaolin/livego/protocol/amf"
+	"github.com/Glamorgann/livego/av"
+	"github.com/Glamorgann/livego/protocol/amf"
 
 	log "github.com/sirupsen/logrus"
 )

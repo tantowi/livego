@@ -2,8 +2,10 @@
     <img src='./logo.png' width='200px' height='80px'/>
 </p>
 
-[![Test](https://github.com/gwuhaolin/livego/workflows/Test/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ATest)
-[![Release](https://github.com/gwuhaolin/livego/workflows/Release/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ARelease)
+<p>fork from <a href="https://github.com/gwuhaolin/livego">gwuhaolin/livego</a></p>
+
+[![Test](https://github.com/Glamorgann/livego/workflows/Test/badge.svg)](https://github.com/Glamorgann/livego/actions?query=workflow%3ATest)
+[![Release](https://github.com/Glamorgann/livego/workflows/Release/badge.svg)](https://github.com/Glamorgann/livego/actions?query=workflow%3ARelease)
 
 Simple and efficient live broadcast server:
 - Very simple to install and use;
@@ -24,9 +26,6 @@ Simple and efficient live broadcast server:
 - H264
 - AAC
 - MP3
-
-## Installation
-After directly downloading the compiled [binary file](https://github.com/gwuhaolin/livego/releases), execute it on the command line.
 
 #### Boot from Docker
 Run `docker run -p 1935:1935 -p 7001:7001 -p 7002:7002 -p 8090:8090 -d gwuhaolin/livego` to start
