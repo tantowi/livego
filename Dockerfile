@@ -1,4 +1,4 @@
-FROM golang:latest as builder
+FROM golang:1.13 as builder
 WORKDIR /app
 ENV GOPROXY https://goproxy.io
 COPY go.mod go.sum ./
