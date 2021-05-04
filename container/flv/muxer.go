@@ -20,31 +20,6 @@ var (
 	flvHeader = []byte{0x46, 0x4c, 0x56, 0x01, 0x05, 0x00, 0x00, 0x00, 0x09}
 )
 
-/*
-func NewFlv(handler av.Handler, info av.Info) {
-	patths := strings.SplitN(info.Key, "/", 2)
-
-	if len(patths) != 2 {
-		log.Warning("invalid info")
-		return
-	}
-
-	w, err := os.OpenFile(*flvFile, os.O_CREATE|os.O_RDWR, 0755)
-	if err != nil {
-		log.Error("open file error: ", err)
-	}
-
-	writer := NewFLVWriter(patths[0], patths[1], info.URL, w)
-
-	handler.HandleWriter(writer)
-
-	writer.Wait()
-	// close flv file
-	log.Debug("close flv file")
-	writer.ctx.Close()
-}
-*/
-
 const (
 	headerLen = 11
 )

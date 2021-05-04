@@ -1,0 +1,1 @@
+nohup ./livego --api_addr=:50010 --httpflv_addr=:50013 --rtmp_addr=:50011 --hls_addr=:50012 --flv_dir=./0/tmp > 0.nohup 2>&1 &

@@ -5,3 +5,5 @@ dist
 tmp
 vendor
 livego
+*.nohup
+/0/tmp
