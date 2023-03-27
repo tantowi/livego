@@ -17,7 +17,7 @@ jobs:
       - name: Go release
         uses: goreleaser/goreleaser-action@v1
       - name: Docker release
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: gwuhaolin/livego
           username: ${{ secrets.DOCKER_USERNAME }}
